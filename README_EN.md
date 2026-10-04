@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="app/src/main/res/drawable/taixu_logo.webp" width="96" alt="TaiXu Logo" />
+  <img src="assets/logo/lingyao-logo.svg" width="96" alt="LingYao Armor Logo" />
 </p>
 
-<h1 align="center">TaiXu · 太墟</h1>
+<h1 align="center">LingYao Armor · 太墟</h1>
 
 <p align="center"><strong>The Myriad Manifestations in the Great Void.</strong></p>
 
@@ -26,7 +26,7 @@ In *Liezi: Questions of Tang*, it is written:
 
 > To the east of the Bohai Sea... there is a vast ravine, indeed a bottomless valley. Its depths are unfathomable, and it is called GuiXu (The Return to the Void). The waters of the eight horizons and nine heavens, the flow of the celestial river, all pour into it, yet it neither increases nor diminishes.
 
-**TaiXu (太墟)** borrows its name and spirit from this: within the strictly sandboxed boundaries of Android, it builds a **runnable, observable, self-healing, and continuously evolving** Linux world.
+**LingYao Armor (太墟)** borrows its name and spirit from this: within the strictly sandboxed boundaries of Android, it builds a **runnable, observable, self-healing, and continuously evolving** Linux world.
 
 It is neither a superficial chat wrapper nor a toy terminal emulator. It allows LLMs, MCP tools, the Linux user space, native PTY terminals, and project workspaces to share an isomorphic execution context and causality chain—turning natural language intent into verifiable files, living processes, validated code, and deliverable Android / Flutter build artifacts.
 
@@ -59,7 +59,7 @@ Human Intent ─→ Task Decomposition (TaskPlan) ─→ Tools / MCP / Linux / B
 
 ## 🚀 Quick Start
 
-1. **Install & Launch**: Download and install the [Latest Release APK](https://github.com/wkbin/taixu/releases) on an ARM64 Android 10+ device (Android 12+ recommended).
+1. **Install & Launch**: Download and install the [Latest Release APK](https://github.com/Lcy040109/lingyao/releases) on an ARM64 Android 10+ device (Android 12+ recommended).
 2. **Initialize Sandbox**: Follow the Onboarding Wizard to select a distribution (e.g., Ubuntu 24.04) and complete the initial RootFS setup over network.
 3. **Configure Model**: Add your LLM API Key (DeepSeek, Claude, OpenAI, SiliconFlow, etc.) in Settings, or run local GGUF models via `llama.cpp` in the sandbox.
 4. **Open Workspace**: Create a project in the Workshop or import an existing repository from GitHub / local ZIP.
@@ -94,7 +94,7 @@ $env:JAVA_HOME="C:\Program Files\Android\Android Studio\jbr"
 
 Debug APK output: `app/build/outputs/apk/debug/taixu-v0.11.0-debug.apk`
 
-> 📦 **TaiXuDev Dual-Package Build**: Set `$env:TAIXU_DEV_BUILD="1"` in CI or local environment to build the preview APK `top.wkbin.taixu.dev`, which can be installed side-by-side with the release package.
+> 📦 **LingYao Armor Dev Dual-Package Build**: Set `$env:TAIXU_DEV_BUILD="1"` in CI or local environment to build the preview APK `top.wkbin.taixu.dev`, which can be installed side-by-side with the release package.
 
 ---
 

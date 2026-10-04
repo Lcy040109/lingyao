@@ -111,10 +111,10 @@ jobs:
           APK_PATH=$(find app/build/outputs/apk/release -name "*.apk" | head -n 1)
           if [ -f "$APK_PATH" ]; then
             TAG="${{ env.TARGET_TAG }}"
-            cp "$APK_PATH" "output/TaiXu-arm64-${TAG}.apk"
-            sha256sum "output/TaiXu-arm64-${TAG}.apk" > "output/TaiXu-arm64-${TAG}.apk.sha256"
-            echo "APK_FILE=output/TaiXu-arm64-${TAG}.apk" >> $GITHUB_ENV
-            echo "SHA_FILE=output/TaiXu-arm64-${TAG}.apk.sha256" >> $GITHUB_ENV
+            cp "$APK_PATH" "output/LingYao-Armor-arm64-${TAG}.apk"
+            sha256sum "output/LingYao-Armor-arm64-${TAG}.apk" > "output/LingYao-Armor-arm64-${TAG}.apk.sha256"
+            echo "APK_FILE=output/LingYao-Armor-arm64-${TAG}.apk" >> $GITHUB_ENV
+            echo "SHA_FILE=output/LingYao-Armor-arm64-${TAG}.apk.sha256" >> $GITHUB_ENV
             echo "TAG=$TAG" >> $GITHUB_ENV
           else
             echo "Error: No release APK generated!" && exit 1
@@ -148,7 +148,7 @@ jobs:
           CHORE=$(echo "$LOG" | grep -Eiv "^- feat|^- fix|^- perf|^- refactor|^- improve" || true)
 
           {
-            echo "## 太墟 $CURRENT_TAG 更新说明"
+            echo "## 灵耀铠甲 $CURRENT_TAG 更新说明"
             echo ""
             if [ -n "$PREV_TAG" ]; then
               echo "> 本版本包含自 \`$PREV_TAG\` 起的全部变更"
@@ -194,7 +194,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ env.TARGET_TAG }}
-          name: "太墟 ${{ env.TARGET_TAG }}"
+          name: "灵耀铠甲 ${{ env.TARGET_TAG }}"
           body_path: release_notes.md
           files: |
             ${{ env.APK_FILE }}

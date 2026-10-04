@@ -4,24 +4,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f7f7f8">
-  <meta name="description" content="太墟插件开发指南：本地与在线来源、manifest.json、.txplugin、ARM64 离线资源、实时进度和发布检查。">
-  <title>插件开发指南 · 太墟 TaiXu</title>
-  <link rel="icon" href="assets/taixu-logo.png">
+  <meta name="description" content="灵耀铠甲插件开发指南：本地与在线来源、manifest.json、.txplugin、ARM64 离线资源、实时进度和发布检查。">
+  <title>插件开发指南 · 灵耀铠甲 LingYao Armor</title>
+  <link rel="icon" href="assets/lingyao-logo.svg">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body class="docs-page">
   <a class="skip-link" href="#main">跳到主要内容</a>
   <header class="site-header docs-header" data-header>
-    <a class="brand" href="index.html" aria-label="返回太墟首页"><span class="brand-mark"><img src="assets/taixu-logo.png" alt=""></span><span class="brand-name">太墟</span><span class="brand-roman">TAIXU</span></a>
+    <a class="brand" href="index.html" aria-label="返回灵耀铠甲首页"><span class="brand-mark"><img src="assets/lingyao-logo.svg" alt=""></span><span class="brand-name">灵耀铠甲</span><span class="brand-roman">TAIXU</span></a>
     <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false" data-menu-toggle><span></span><span></span></button>
-    <nav class="site-nav" aria-label="主导航" data-nav><a href="index.html#vision">理念</a><a href="index.html#themes">界面</a><a href="plugins.html" aria-current="page">插件教程</a><a href="templates.html">模板教程</a><a class="nav-github" href="https://github.com/wkbin/taixu" target="_blank" rel="noreferrer">GitHub ↗</a></nav>
+    <nav class="site-nav" aria-label="主导航" data-nav><a href="index.html#vision">理念</a><a href="index.html#themes">界面</a><a href="plugins.html" aria-current="page">插件教程</a><a href="templates.html">模板教程</a><a class="nav-github" href="https://github.com/Lcy040109/lingyao" target="_blank" rel="noreferrer">GitHub ↗</a></nav>
   </header>
 
   <main id="main" class="docs-main">
     <section class="docs-hero reveal">
-      <div class="section-index">TAIXU PLUGIN GUIDE / SCHEMA 1</div>
-      <h1>把你的工具，<br>装进太墟。</h1>
+      <div class="section-index">LINGYAO ARMOR PLUGIN GUIDE / SCHEMA 1</div>
+      <h1>把你的工具，<br>装进灵耀铠甲。</h1>
       <p>用在线 Registry 或一个自包含的 <code>.txplugin</code>，把命令、SDK、脚本和本地服务带进 ARM64 Linux 沙箱。这里记录的是当前导入器与安装器的真实约束。</p>
     </section>
 
@@ -54,7 +54,7 @@
   "schemaVersion": 1,
   "id": "hello-arm64",
   "name": "Hello ARM64",
-  "description": "TaiXu 本地插件示例",
+  "description": "LingYao Armor 本地插件示例",
   "version": "1.0.0",
   "publisher": "Your Name",
   "category": "DEVELOPER",
@@ -75,7 +75,7 @@
           <h2>04 / 从零制作 Hello 插件</h2>
           <p>将脚本放在 <code>payload/bin/hello</code>：</p>
           <pre><code>#!/bin/sh
-echo "hello from TaiXu"</code></pre>
+echo "hello from LingYao Armor"</code></pre>
           <p>安装步骤必须创建工具目录并恢复执行权限：</p>
           <pre><code>"installSteps": [
   "test -f \"$TAIXU_PLUGIN_PAYLOAD/bin/hello\"",
@@ -135,11 +135,11 @@ is_aarch64_elf() {
         <section id="checklist" class="reveal">
           <h2>09 / 发布前检查</h2>
           <ul><li>ZIP 根目录、1 MiB manifest 和 8 GiB 解包限制均满足。</li><li>本地/在线来源、ID、版本、ARM64、启动类型与权限字段正确。</li><li>所有大文件都有固定 SHA-256。</li><li>不依赖未声明的 unzip、xz、file、readelf 等可选命令。</li><li>ELF、符号链接和 ZIP 可执行位均已处理。</li><li>断网完成导入、安装、验证和启动。</li><li>全新安装、同版本重复导入、新版本升级和卸载均验证。</li><li>结构化进度单调递增且日志不包含敏感信息。</li><li>失败时 staging 可清理，并已核算全部磁盘副本。</li></ul>
-          <a class="button button-primary" href="https://github.com/wkbin/taixu/blob/main/docs/PLUGIN_DEVELOPMENT_GUIDELINES.md" target="_blank" rel="noreferrer">阅读完整规范 <span>↗</span></a>
+          <a class="button button-primary" href="https://github.com/Lcy040109/lingyao/blob/main/docs/PLUGIN_DEVELOPMENT_GUIDELINES.md" target="_blank" rel="noreferrer">阅读完整规范 <span>↗</span></a>
         </section>
       </article>
     </div>
   </main>
-  <footer><div class="footer-brand"><strong>太墟</strong><span>TAIXU / LINUX AI RUNTIME</span></div><p>于太墟中立极，于方寸间创世。</p><div class="footer-links"><a href="index.html">首页</a><a href="templates.html">模板教程</a><a href="https://github.com/wkbin/taixu">GitHub</a></div><small>© <span data-year></span> TaiXu Project. Open source on GitHub.</small></footer>
+  <footer><div class="footer-brand"><strong>灵耀铠甲</strong><span>LINGYAO ARMOR / LINUX AI RUNTIME</span></div><p>于灵耀铠甲中立极，于方寸间创世。</p><div class="footer-links"><a href="index.html">首页</a><a href="templates.html">模板教程</a><a href="https://github.com/Lcy040109/lingyao">GitHub</a></div><small>© <span data-year></span> LingYao Armor Project. Open source on GitHub.</small></footer>
 </body>
 </html>

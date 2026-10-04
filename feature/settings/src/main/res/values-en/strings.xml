@@ -46,8 +46,8 @@
     <string name="settings_color_dark_description">An immersive Material 3 obsidian dark theme</string>
     <string name="settings_interface_scale">Interface scale</string>
     <string name="settings_scale">Scale</string>
-    <string name="settings_terminal_preview_command">taixu@debian:~$ echo \"TaiXu sandbox is running normally 🚀\"</string>
-    <string name="settings_terminal_preview_output">TaiXu sandbox is running normally 🚀</string>
+    <string name="settings_terminal_preview_command">lingyao@debian:~$ echo \"LingYao Armor sandbox is running normally 🚀\"</string>
+    <string name="settings_terminal_preview_output">LingYao Armor sandbox is running normally 🚀</string>
     <string name="settings_tool_center_empty_category_title">No tools in this category</string>
     <string name="settings_tool_center_empty_category_subtitle">Try another category, or refresh the tool registry later</string>
 </resources>
