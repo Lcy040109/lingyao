@@ -1,4 +1,4 @@
-name: Build TaiXuDev APK
+name: Build LingYao Armor Dev APK
 
 on:
   workflow_dispatch:
@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    name: Build & Package TaiXuDev
+    name: Build & Package LingYao Armor Dev
     runs-on: ubuntu-24.04
     timeout-minutes: 45
 
@@ -40,7 +40,7 @@ jobs:
       - name: Grant Execute Permission for Gradlew
         run: chmod +x gradlew
 
-      - name: Build TaiXuDev APK
+      - name: Build LingYao Armor Dev APK
         env:
           TAIXU_DEV_BUILD: "1"
         run: |
@@ -51,9 +51,9 @@ jobs:
           mkdir -p output
           APK_PATH=$(find app/build/outputs/apk -name "*.apk" | head -n 1)
           if [ -f "$APK_PATH" ]; then
-            cp "$APK_PATH" output/TaiXuDev-arm64-debug.apk
-            sha256sum output/TaiXuDev-arm64-debug.apk > output/TaiXuDev-arm64-debug.apk.sha256
-            echo "APK ready: output/TaiXuDev-arm64-debug.apk"
+            cp "$APK_PATH" output/LingYao-Armor-Dev-arm64-debug.apk
+            sha256sum output/LingYao-Armor-Dev-arm64-debug.apk > output/LingYao-Armor-Dev-arm64-debug.apk.sha256
+            echo "APK ready: output/LingYao-Armor-Dev-arm64-debug.apk"
           else
             echo "Error: No APK generated!" && exit 1
           fi
