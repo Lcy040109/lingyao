@@ -76,7 +76,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "TaiXu"
+rootProject.name = "LingYaoArmor"
 include(":app")
 include(":baselineprofile")
 include(":core:common")
