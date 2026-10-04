@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="app/src/main/res/drawable/taixu_logo.webp" width="96" alt="灵耀铠甲 Logo" />
+  <img src="assets/logo/lingyao-logo.svg" width="96" alt="灵耀铠甲 Logo" />
 </p>
 
 <h1 align="center">灵耀铠甲 · LingYao Armor</h1>
@@ -198,7 +198,7 @@ app/build/outputs/apk/debug/lingyao-armor-v0.20.0-debug.apk
 .\tools\prepare-proot-runtime.ps1
 ```
 
-设置 `TAIXU_DEV_BUILD=1` 可构建包名为 `top.wkbin.taixu.dev` 的 **灵耀铠甲 Dev** 预览版，与正式包 `top.wkbin.taixu` 独立共存：
+设置 `TAIXU_DEV_BUILD=1` 可构建包名为 `com.lingyao.kaijia.dev` 的 **灵耀铠甲 Dev** 预览版，与正式包 `com.lingyao.kaijia` 独立共存：
 
 ```powershell
 $env:TAIXU_DEV_BUILD="1"
