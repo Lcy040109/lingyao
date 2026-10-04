@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="taixu_app_name">太墟</string>
+    <string name="taixu_app_name">灵耀铠甲</string>
     <string name="taixu_update_available">发现新版本 v%1$s</string>
     <string name="taixu_update_versions">当前版本: v%1$s  ➔  最新版本: v%2$s</string>
     <string name="taixu_update_downloading_package">正在下载更新包…</string>
@@ -12,7 +12,7 @@
     <string name="taixu_agent_notification_channel">Agent 执行</string>
     <string name="taixu_agent_ready">智能体中枢就绪</string>
     <string name="taixu_agent_default_title">智枢智能体</string>
-    <string name="taixu_agent_background_running">太墟 Agent 后台运行中</string>
+    <string name="taixu_agent_background_running">灵耀铠甲 Agent 后台运行中</string>
     <string name="taixu_agent_background_locked">智能体后台运行中 · 进程锁已开启</string>
     <string name="taixu_notification_stop">停止</string>
     <string name="taixu_notification_reply_to">回复给 %1$s</string>
@@ -25,5 +25,5 @@
     <string name="taixu_runtime_background_available">后台工具和本地服务保持可用</string>
     <string name="taixu_agent_mcp_notification_channel">MCP 被控端</string>
     <string name="taixu_agent_mcp_running_hint">外部 AI 客户端可随时连接</string>
-    <string name="taixu_gui_a11y_description">太墟 GUI 手势服务：用于点击/滑动/长按等全局手势。已授权 Shizuku 或 Root 时会自动写入开启，无需手动进系统无障碍页；未授权时也可在系统设置中手动开启作为降级通路。</string>
+    <string name="taixu_gui_a11y_description">灵耀铠甲 GUI 手势服务：用于点击/滑动/长按等全局手势。已授权 Shizuku 或 Root 时会自动写入开启，无需手动进系统无障碍页；未授权时也可在系统设置中手动开启作为降级通路。</string>
 </resources>
