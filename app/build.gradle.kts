@@ -33,7 +33,7 @@ extensions.configure<ApplicationExtension> {
         versionCode = appVersionCode
         versionName = appVersionName
         // 应用名统一走 manifest placeholder：TaiXuDev 构建显示 "TaiXuDev"，其余显示 "太墟"。
-        manifestPlaceholders["appLabel"] = if (taiXuDevBuild) "TaiXuDev" else "太墟"
+        manifestPlaceholders["appLabel"] = if (taiXuDevBuild) "灵耀铠甲 Dev" else "灵耀铠甲"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         ndk {
             abiFilters += "arm64-v8a"
@@ -101,7 +101,7 @@ extensions.configure<ApplicationExtension> {
             }
         }
         release {
-            manifestPlaceholders["appLabel"] = if (taiXuDevBuild) "TaiXuDev" else "太墟"
+            manifestPlaceholders["appLabel"] = if (taiXuDevBuild) "灵耀铠甲 Dev" else "灵耀铠甲"
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(
@@ -265,7 +265,7 @@ tasks.configureEach {
 
 extensions.configure<ApplicationAndroidComponentsExtension> {
     onVariants { variant ->
-        val buildAppName = "taixu-v${appVersionName}-${variant.name}.apk"
+        val buildAppName = "lingyao-armor-v${appVersionName}-${variant.name}.apk"
         variant.outputs.forEach { output ->
             output.outputFileName.set(buildAppName)
         }
