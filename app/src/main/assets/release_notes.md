@@ -1,4 +1,4 @@
-# 太墟 · TaiXu v0.17.0 更新说明
+# 灵耀铠甲 · LingYao Armor v0.17.0 更新说明
 
 > **当前版本**：v0.17.0  
 > **运行环境**：Android 10+ · arm64-v8a（PRoot Linux 沙箱 + AI 结对）
