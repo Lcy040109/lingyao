@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="taixu_theme" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">#FFFFFF</item>
+        <item name="windowSplashScreenBackground">#020914</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/taixu_splash</item>
         <item name="postSplashScreenTheme">@style/taixu_post_splash_theme</item>
     </style>
