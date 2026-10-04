@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+<title id="title">灵耀铠甲</title>
+<desc id="desc">金蓝灵能护盾徽章</desc>
+<defs>
+  <radialGradient id="bg" cx="50%" cy="42%" r="70%"><stop offset="0" stop-color="#102c47"/><stop offset="0.58" stop-color="#061322"/><stop offset="1" stop-color="#01060d"/></radialGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff0b1"/><stop offset=".25" stop-color="#d59d38"/><stop offset=".5" stop-color="#ffe28b"/><stop offset=".75" stop-color="#a96d18"/><stop offset="1" stop-color="#f6cf6b"/></linearGradient>
+  <linearGradient id="steel" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#233c52"/><stop offset="1" stop-color="#08121f"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect x="16" y="16" width="992" height="992" rx="220" fill="url(#bg)"/>
+<g opacity=".45" fill="none" stroke="#16bff7" stroke-width="4">
+  <circle cx="512" cy="512" r="390"/><circle cx="512" cy="512" r="332"/><path d="M512 92v840M92 512h840"/>
+</g>
+<g filter="url(#glow)" fill="#20cfff">
+  <path d="M512 110l28 42-28 42-28-42z"/><path d="M512 454l30 48-30 48-30-48z"/><path d="M512 840l27 41-27 41-27-41z"/>
+</g>
+<path d="M512 86L834 210l86 220c-18 276-166 470-408 582C270 900 122 706 104 430l86-220z" fill="#0b2135"/>
+<path d="M512 104L824 220l72 214c-20 248-153 432-384 542C281 866 148 682 128 434l72-214z M512 170L266 264l-62 188c18 192 122 340 308 438 186-98 290-246 308-438l-62-188z" fill="url(#gold)" fill-rule="evenodd"/>
+<path d="M512 182l232 88 56 186c-19 173-113 309-288 404-175-95-269-231-288-404l56-186z" fill="url(#steel)"/>
+<path d="M164 356L70 274l104 230 70 92-34-204zM860 356l94-82-104 230-70 92 34-204z" fill="url(#gold)"/>
+<path d="M344 342h358l-62 70H394zM396 446h238l-48 62H444z" fill="url(#gold)"/>
+<path d="M330 590c82-54 206-66 338-18l-46 82c-86-34-178-22-256 44z" fill="url(#gold)"/>
+<path d="M296 710c105-72 218-50 292 18 51 47 105 57 174 18l-56 104c-78 44-155 19-223-35-57-45-110-46-169 8z" fill="url(#gold)"/>
+<path d="M252 300l-44 162c12 115 58 216 134 298l-20-120c-50-66-74-137-78-216zM772 300l44 162c-12 115-58 216-134 298l20-120c50-66 74-137 78-216z" fill="#24d6ff" opacity=".95"/>
+</svg>
