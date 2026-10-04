@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="app/src/main/res/drawable/taixu_logo.webp" width="96" alt="太墟 Logo" />
+  <img src="app/src/main/res/drawable/taixu_logo.webp" width="96" alt="灵耀铠甲 Logo" />
 </p>
 
-<h1 align="center">太墟 · TaiXu</h1>
+<h1 align="center">灵耀铠甲 · LingYao Armor</h1>
 
 <p align="center"><strong>掌中归墟，万象可期。</strong></p>
 
@@ -15,22 +15,22 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/wkbin/taixu/releases">Releases</a> ·
-  <a href="https://github.com/wkbin/taixu/issues">Issues</a> ·
+  <a href="https://github.com/Lcy040109/lingyao/releases">Releases</a> ·
+  <a href="https://github.com/Lcy040109/lingyao/issues">Issues</a> ·
   <strong>简体中文</strong> · <a href="README_EN.md">English</a>
 </p>
 
 ---
 
-## 🌌 何为太墟
+## 🌌 何为灵耀铠甲
 
 《列子·汤问》云：“渤海之东……其中有大壑焉，实惟无底之谷，其下无底，名曰归墟。八纮九野之水，天汉之流，莫不注之，而无增无减焉。”
 
-**太墟**取意于此：在 Android 的应用沙盒与权限边界内，构筑一方**可运行、可观测、可恢复、可演进**的 Linux 与 AI 自动化环境。
+**灵耀铠甲**取意于此：在 Android 的应用沙盒与权限边界内，构筑一方**可运行、可观测、可恢复、可演进**的 Linux 与 AI 自动化环境。
 
-它不是给大模型套一层聊天界面，也不只是终端模拟器。太墟让 Agent、MCP 工具、Linux 进程、原生 PTY、浏览器、Git 与项目工作区共享执行上下文；可视化工作流则把一次对话扩展为可持久化、可审批、可定时的自动化任务。你可以从一句自然语言意图出发，最终得到真实文件、运行中的进程、经过验证的代码或可安装的 Android / Flutter 构建产物。
+它不是给大模型套一层聊天界面，也不只是终端模拟器。灵耀铠甲让 Agent、MCP 工具、Linux 进程、原生 PTY、浏览器、Git 与项目工作区共享执行上下文；可视化工作流则把一次对话扩展为可持久化、可审批、可定时的自动化任务。你可以从一句自然语言意图出发，最终得到真实文件、运行中的进程、经过验证的代码或可安装的 Android / Flutter 构建产物。
 
-> 于太墟中立极，于方寸间创世。
+> 于灵耀铠甲中立极，于方寸间创世。
 
 ```text
 人的意图 ─→ Agent 规划 ─→ Linux / 工具 / MCP / 浏览器 / 宿主能力 ─→ 验证与交付
@@ -59,13 +59,13 @@
 | **无线 ADB 与宿主自动化** | mDNS 发现、通知栏配对码输入、Android / PRoot 日志、设备体检与 Intent 诊断；经用户授权后，可通过无线 ADB、Shizuku、Root 或无障碍通道执行不同级别的宿主与 GUI 自动化。 |
 | **端侧协作** | 提供全局悬浮助手、带临时 PIN 的局域网 WebChat、FTP 文件传输，以及 FGS、WakeLock 与 Wi-Fi Lock 长任务保活能力。 |
 
-> 当前开发分支在 `v0.15.1` 基础上继续增强 Harness 恢复、MCP OAuth、能力按需发现和后台工作流。稳定版功能与安装包请以 [Releases](https://github.com/wkbin/taixu/releases) 页面为准。
+> 当前开发分支在 `v0.15.1` 基础上继续增强 Harness 恢复、MCP OAuth、能力按需发现和后台工作流。稳定版功能与安装包请以 [Releases](https://github.com/Lcy040109/lingyao/releases) 页面为准。
 
 ---
 
 ## 🧠 Agent 可靠性与安全
 
-太墟把 Agent 视为会长期运行并真实修改工作区的执行系统，而不只是一次性的问答接口：
+灵耀铠甲把 Agent 视为会长期运行并真实修改工作区的执行系统，而不只是一次性的问答接口：
 
 - **分级工具审批**：危险操作可要求确认，会话级授权与全局策略分离。
 - **可恢复会话**：流式输出、工具调用、计划、记忆和执行历史持久化，中断后可继续推进。
@@ -80,7 +80,7 @@
 
 ### 1. 安装
 
-在 **ARM64、Android 10+**（推荐 Android 12+）设备上安装 [最新 Release APK](https://github.com/wkbin/taixu/releases)。Release 页面同时提供构建产物与 SHA-256，建议安装前校验。
+在 **ARM64、Android 10+**（推荐 Android 12+）设备上安装 [最新 Release APK](https://github.com/Lcy040109/lingyao/releases)。Release 页面同时提供构建产物与 SHA-256，建议安装前校验。
 
 ### 2. 初始化 Linux
 
@@ -106,7 +106,7 @@
 - **浏览器**：网页访问、调试、Hook 与 Browser MCP 自动化。
 - **无线 ADB**：配对设备、查看日志并执行授权范围内的诊断。
 
-> 长时间运行 Agent、构建或工作流时，建议允许通知并将太墟加入系统电池优化白名单。Android 的后台限制仍可能影响任务时效。
+> 长时间运行 Agent、构建或工作流时，建议允许通知并将灵耀铠甲加入系统电池优化白名单。Android 的后台限制仍可能影响任务时效。
 
 ---
 
@@ -187,7 +187,7 @@ export JAVA_HOME="/path/to/jdk-17"
 Debug APK 默认输出到：
 
 ```text
-app/build/outputs/apk/debug/taixu-v0.15.1-debug.apk
+app/build/outputs/apk/debug/lingyao-armor-v0.20.0-debug.apk
 ```
 
 ### 可选步骤
@@ -198,7 +198,7 @@ app/build/outputs/apk/debug/taixu-v0.15.1-debug.apk
 .\tools\prepare-proot-runtime.ps1
 ```
 
-设置 `TAIXU_DEV_BUILD=1` 可构建包名为 `top.wkbin.taixu.dev` 的 **TaiXuDev** 预览版，与正式包 `top.wkbin.taixu` 独立共存：
+设置 `TAIXU_DEV_BUILD=1` 可构建包名为 `top.wkbin.taixu.dev` 的 **灵耀铠甲 Dev** 预览版，与正式包 `top.wkbin.taixu` 独立共存：
 
 ```powershell
 $env:TAIXU_DEV_BUILD="1"
@@ -281,12 +281,16 @@ Android 应用业务层以 Kotlin 与 Jetpack Compose 为主；底层还包含 C
 
 ## 🤝 参与贡献
 
-欢迎提交 [Issue](https://github.com/wkbin/taixu/issues)、Pull Request，或分享你的真机使用记录。开始修改前建议先阅读 [AI_NAVIGATION.md](docs/AI_NAVIGATION.md) 与对应模块文档，并运行架构检查和相关测试。
+欢迎提交 [Issue](https://github.com/Lcy040109/lingyao/issues)、Pull Request，或分享你的真机使用记录。开始修改前建议先阅读 [AI_NAVIGATION.md](docs/AI_NAVIGATION.md) 与对应模块文档，并运行架构检查和相关测试。
 
 ---
 
+## 🔗 上游项目与许可证
+
+灵耀铠甲基于开源项目 **TaiXu** 二次开发，上游项目：`wkbin/taixu`。本项目继续遵循仓库中的 **GPL-3.0** 许可证；内部仍保留部分 `taixu-*`、`TAIXU_*` 兼容名称，以避免破坏现有运行时协议与脚本。
+
 ## 📜 注脚
 
-> 须弥纳于芥子，太墟纳于掌中。
+> 须弥纳于芥子，灵耀铠甲纳于掌中。
 
 限制从未真正消失；但自由可以来自身处限制之中，仍有能力去构筑、去验证属于自己的世界。
