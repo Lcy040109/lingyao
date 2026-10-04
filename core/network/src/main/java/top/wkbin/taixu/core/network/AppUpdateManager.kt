@@ -19,7 +19,7 @@ import java.io.File
 import java.io.FileOutputStream
 
 /**
- * 太墟 · 应用版本更新管理器 (GitHub Releases API)
+ * 灵耀铠甲 · 应用版本更新管理器 (GitHub Releases API)
  */
 class AppUpdateManager(
     private val context: Context,
@@ -27,10 +27,10 @@ class AppUpdateManager(
 ) {
     private val json = Json { ignoreUnknownKeys = true; isLenient = true }
     companion object {
-        const val GITHUB_REPO = "wkbin/taixu"
-        const val GITHUB_REPO_URL = "https://github.com/wkbin/taixu"
+        const val GITHUB_REPO = "Lcy040109/lingyao"
+        const val GITHUB_REPO_URL = "https://github.com/Lcy040109/lingyao"
         const val QQ_GROUP_ID = "964382207"
-        private const val RELEASES_API = "https://api.github.com/repos/wkbin/taixu/releases/latest"
+        private const val RELEASES_API = "https://api.github.com/repos/Lcy040109/lingyao/releases/latest"
     }
 
     /**
@@ -41,7 +41,7 @@ class AppUpdateManager(
             val request = Request.Builder()
                 .url(RELEASES_API)
                 .header("Accept", "application/vnd.github.v3+json")
-                .header("User-Agent", "TaiXu-App/${currentVersionName}")
+                .header("User-Agent", "LingYao-Armor-App/${currentVersionName}")
                 .get()
                 .build()
 
@@ -111,7 +111,7 @@ class AppUpdateManager(
             val request = Request.Builder()
                 .url("https://api.github.com/repos/$GITHUB_REPO/releases/tags/$tag")
                 .header("Accept", "application/vnd.github.v3+json")
-                .header("User-Agent", "TaiXu-App/$versionName")
+                .header("User-Agent", "LingYao-Armor-App/$versionName")
                 .get()
                 .build()
 
@@ -156,7 +156,7 @@ class AppUpdateManager(
             val body = response.body
             val contentLength = body.contentLength().takeIf { it > 0 }
             val downloadDir = File(context.cacheDir, "updates").apply { mkdirs() }
-            val apkFile = File(downloadDir, "taixu-latest.apk")
+            val apkFile = File(downloadDir, "lingyao-armor-latest.apk")
             if (apkFile.exists()) apkFile.delete()
 
             body.byteStream().use { input ->
