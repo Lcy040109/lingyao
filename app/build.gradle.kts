@@ -27,7 +27,7 @@ extensions.configure<ApplicationExtension> {
     ndkVersion = "30.0.15729638"
 
     defaultConfig {
-        applicationId = if (taiXuDevBuild) "top.wkbin.taixu.dev" else "top.wkbin.taixu"
+        applicationId = if (taiXuDevBuild) "com.lingyao.kaijia.dev" else "com.lingyao.kaijia"
         minSdk = 29
         targetSdk = 37
         versionCode = appVersionCode
