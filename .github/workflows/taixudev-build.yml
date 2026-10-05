@@ -1,6 +1,9 @@
 name: Build LingYao Armor Dev APK
 
 on:
+  push:
+    branches:
+      - build-lingyao-apk
   workflow_dispatch:
     inputs:
       release_tag:
